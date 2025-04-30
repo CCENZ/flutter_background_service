@@ -162,6 +162,8 @@ public class BackgroundService extends Service implements MethodChannel.MethodCa
                     .setOngoing(true)
                     .setContentTitle(notificationTitle)
                     .setContentText(notificationContent)
+                    .setPriority(NotificationCompat.PRIORITY_HIGH)
+                    .setGroup("service");
                     .setContentIntent(pi);
 
             try {
